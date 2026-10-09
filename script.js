@@ -1,17 +1,4 @@
 
-// console.log("Hello World");
-// const button = document.getElementById("submit");
-
-// button.addEventListener("click", function(){
-//     console.log("Hello World");
-// });
-
-// localStorage.setItem('name','Ilma');
-// localStorage.setItem('email','Ilma@gmail.com');
-// localStorage.setItem('company','Swivel');
-// localStorage.setItem('Budget','$1000');
-// localStorage.setItem('Project details','Agile project');
-
 const studentDetails = document.querySelector('.basic_form');
 
 studentDetails.addEventListener('submit',function(event){
