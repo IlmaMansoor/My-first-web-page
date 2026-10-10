@@ -1,173 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Basics!</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 
 <body>
     <div class="heading">
-        <h5> 
+        <h5>
             CONTACT!1
         </h5>
 
-        <h1> 
+        <h1>
             Let's Build Something<span> Great</span>
         </h1>
     </div>
-    
+
     <div class="divide">
         <div class="form-section">
-    
-    <form class="basic_form">
-    <div class="container2">
-        <div class="form1">
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Your name" required>
+
+            <form class="basic_form">
+                <div class="container2">
+                    <div class="form1">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form2">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="you@company.com" required>
+                    </div>
+                </div>
+
+                <div class="container3">
+                    <div class="form3">
+                        <label for="coname">Company</label>
+                        <input type="text" id="coname" placeholder="Your company (optional)" required>
+                    </div>
+
+                    <div class="form4">
+                        <label for="options">Budget Range</label>
+                        <select id="options" required>
+                            <option value="Select a range" id="options">Select a range</option>
+                            <option value="Under $1,000" id="options">Under $1,000</option>
+                            <option value="$1,000 - $3,000" id="options">$1,000 - $3,000</option>
+                            <option value="$3,000 - $5,000" id="options">$3,000 - $5,000</option>
+                            <option value="$5,000 - $10,000" id="options">$5,000 - $10,000</option>
+                            <option value="$10,000+" id="options">$10,000+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form5">
+                    <label for="Multiple_text">Project Details</label>
+                    <textarea cols="80" rows="40" id="multiple_text"
+                        placeholder="Tell us about your project,goals and timelines..."></textarea>
+                </div>
+
+                <div class="form6">
+                    <button type="submit" id="submit" autocomplete="submit">Send Message -></button>
+                </div>
+            </form>
+
+            <div class="saved-data">
+                <h3>Submitted Details</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Field</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td id="displayName"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Email</td>
+                            <td id="displayEmail"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Company</td>
+                            <td id="displayCompany"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Budget Range</td>
+                            <td id="displayBudget"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Project Details</td>
+                            <td id="displayProject"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="container1">
+            <h3>Get in Touch</h3>
+            <p id="para1">Have a project in mind? We'd love to hear about it. Fill <br class="break1">out the form or
+                reach us through any of these
+                <br class="break2">channels.
+            </p>
+            <div class="c1">
+                <div class="container4">
+                    <i class="fa-solid fa-square-envelope" style="color: rgb(194, 52, 14);"></i>
+                </div>
+                <div class="container5">
+                    <p id="send">EMAIL</p>
+                    <a href="mailto:hashscribe@gmail.com" id="btn">info.hashscribe@gmail.com</a>
+                </div>
+            </div>
+            <div class="container6">
+                <div class="c2">
+                    <p id="c9">PHONE</p>
+                    <div class="container12">
+                        <i class="fa-solid fa-phone" style="color: rgb(194, 52, 14);"></i>
+                    </div>
+                    <div class="container13">
+                        <div class="phone-item">
+                            <a href="tel:+94779122185" class="phone-code">SL</a>
+                            <div class="phone-details">
+                                <p>Sri Lanka</p>
+                                <a href="tel:+94779122185" class="phone-number">+94 779 122 185</a>
+                            </div>
+                        </div>
+
+                        <div class="phone-item">
+                            <a href="tel:+447477355982" class="phone-code">UK</a>
+                            <div class="phone-details">
+                                <p>United Kingdom</p>
+                                <a href="tel:+447477355982" class="phone-number">+44 7477 355982</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container14">
+                <div class="c5">
+                    <a href="https://github.com/" id="g1">GitHub</a>
+                </div>
+
+                <div class="c6">
+                    <a href="https://www.linkedin.com/" id="l1">Linedin</a>
+                </div>
+
+                <div class="c7">
+                    <a href="https://x.com/" id="t1">Twitter</a>
+                </div>
+            </div>
+
         </div>
 
-        <div class="form2">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="you@company.com" required>
-        </div>
-        </div>
-
-        <div class="container3">
-        <div class="form3">
-            <label for="coname">Company</label>
-            <input type="text" id="coname" placeholder="Your company (optional)" required>
-        </div>
-
-        <div class="form4">
-            <label for="options">Budget Range</label>
-            <select id="options" required>
-                <option value="Select a range" id="options">Select a range</option>
-                <option value="Under $1,000" id="options">Under $1,000</option>
-                <option value="$1,000 - $3,000" id="options">$1,000 - $3,000</option>
-                <option value="$3,000 - $5,000" id="options">$3,000 - $5,000</option>
-                <option value="$5,000 - $10,000" id="options">$5,000 - $10,000</option>
-                <option value="$10,000+" id="options">$10,000+</option>
-            </select>
-        </div>
-        </div>
-
-        <div class="form5">
-            <label for="Multiple_text">Project Details</label>
-            <textarea  cols="80" rows="40" id="multiple_text" placeholder="Tell us about your project,goals and timelines..." ></textarea>
-        </div>
-
-        <div class="form6">
-            <button type="submit"  id="submit" autocomplete="submit">Send Message -></button>
-        </div>
-    </form>
-    
-    <div class="saved-data">
-    <h3>Submitted Details</h3>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Field</th>
-                <th>Details</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>Name</td>
-                <td id="displayName"></td>
-            </tr>
-
-            <tr>
-                <td>Email</td>
-                <td id="displayEmail"></td>
-            </tr>
-
-            <tr>
-                <td>Company</td>
-                <td id="displayCompany"></td>
-            </tr>
-
-            <tr>
-                <td>Budget Range</td>
-                <td id="displayBudget"></td>
-            </tr>
-
-            <tr>
-                <td>Project Details</td>
-                <td id="displayProject"></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-</div>
-    <div class="container1">
-    <h3>Get in Touch</h3>
-    <p id="para1">Have a project in mind? We'd love to hear about it. Fill <br class="break1">out the form or reach us through any of these 
-        <br class="break2">channels.</p>
-    <div class="c1">
-    <div class="container4">
-    <i class="fa-solid fa-square-envelope" style="color: rgb(194, 52, 14);"></i>
     </div>
-    <div class="container5">
-    <p id="send" >EMAIL</p>
-    <a href="mailto:hashscribe@gmail.com" id="btn">info.hashscribe@gmail.com</a>
-    </div>
-    </div>
-    <div class="container6">
-    <div class="c2">
-         <p id="c9">PHONE</p>
-         <div class="container12">
-         <i class="fa-solid fa-phone" style="color: rgb(194, 52, 14);"></i>
-         </div>
-    <div class="container13">
-    <div class="container7">
-    <div class="c3">
-        <div class="container9">
-        <a href="tel:+94 77 9122 185" id="btn0">SL</a>
-        </div>
-        <div class="container10">
-        <p id="p1">Sri Lanka</p>
-        <a href="tel:0779122185" class="btn1">+94 779 122 185</a>
-    </div>
-    </div>
-    </div>
-    <div class="container8">
-    <div class="c4">
-        <a href="tel:+447477 355982" class="btn2">UK</a>
-        <div class="container11">
-        <p id="p2">United Kingdom</p>
-        <a href="tel:+44 7477 355982" class="btn3">+44 7477 355982</a>
-        </div>
-    </div>
-    </div>
-    </div>
- </div>
- </div>
-<hr>
- <div class="container14">
- <div class="c5">
-    <a href="https://github.com/" id="g1">GitHub</a>
- </div>
-
- <div class="c6">
-    <a href="https://www.linkedin.com/" id="l1">Linedin</a>
- </div>
-
- <div class="c7">
-    <a href="https://x.com/" id="t1">Twitter</a>
- </div>
- </div>
-
- </div>
-
- </div>
 
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
